@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+    {% if data %}
+        <p>Квадрат числа {{data.number}} равен {{data.square}}</p>
+    {% else %}
+    <form method="post">
+        <input type="number" name="number" placeholder="Введите число">
+        <input type="submit" value="Отправить">
+    </form>
+    {% endif %}
+</body>
+</html>
